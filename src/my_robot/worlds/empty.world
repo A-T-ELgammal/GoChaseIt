@@ -1,0 +1,25 @@
+<sdf>
+
+<world>
+
+    <!-- insert the plane ground-->
+    <include>
+        <uri>model://ground_plane </uri>
+    </include>
+
+    <!--insert light -->
+    <include>
+        <uri>model://sun</uri>
+    </include>
+
+    <!--insert the camera in the world-->
+    <gui fullscreen='0'>
+        <camera name="world_camera">
+            <pose>4.927360 -4.376610 3.740080 0.000000 0.275643 2.356190</pose>
+            <view_controller>orbit</view_controller>
+        </camera>
+    </gui>
+</world>
+</sdf>
+
+```
